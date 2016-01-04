@@ -149,7 +149,13 @@ a.keyword:hover {
         background-color: @bgHighlight; }}}
 }
 /* navbar end */
-
+nav {
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, .1);
+    background: linear-gradient(lighten(@accent-color, 3%),
+                                darken(@accent-color, 3%));
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+}
 
 #main {
     .make-md-column(9);
@@ -183,7 +189,8 @@ a.keyword:hover {
         padding-right: 0.2em;
         padding-bottom: 0.2em;
         margin-bottom: 0.2em;
-        text-shadow: 0 2px 5px rgba(58, 100, 176, .5);
+        text-shadow: rgba(58, 100, 176, .5) 0 1px 1px;
+        box-shadow: 1px 1px 0px 0px rgba(58, 100, 176, .2);
     }
 
     .search-module-input {
@@ -254,6 +261,8 @@ article {
         border-style: solid;
         border-width: 1px 0px 1px 0px;
         border-color: @entry-title-color;
+        box-shadow: 0 1px 0px 0px rgba(58, 100, 176, .5),
+                    0 1px 0px 0px rgba(58, 100, 176, .5) inset;
 
         font-family: "Noto Sans", sans-serif;
         font-weight: 900;
@@ -281,7 +290,7 @@ article {
         a {
             color: @entry-title-color;
         }
-        text-shadow: 0 2px 5px rgba(58, 100, 176, .5);
+        text-shadow: rgba(58, 100, 176, .5) 0 1px 1px;
     }
 }
 
@@ -296,6 +305,13 @@ article {
     
     h2, h3, h4, h5, h6 {
         color: @heading-color;
+        text-shadow: rgba(58, 100, 176, .5) 0 1px 1px;
+        a, a:visited {
+            color: @heading-color;
+        }
+        a:hover {
+            decoration: underline
+        }
     }
 
     h1, h2 {
@@ -309,7 +325,7 @@ article {
         margin-top: 2em;
         padding-right: 0.2em;
         padding-bottom: 0.2em;
-        text-shadow: 0 2px 5px rgba(58, 100, 176, .5);
+        box-shadow: 1px 1px 0px 0px rgba(58, 100, 176, .5);
     }
 
     h3:before,
@@ -326,7 +342,6 @@ article {
 
     h3 {
         font-size: x-large;
-        text-shadow: 0 2px 3px rgba(58, 100, 176, .5);
     }
 
     h3:before {
@@ -336,6 +351,7 @@ article {
     h3 {
         margin-top: 1em;
         border-style: none none double none;
+        box-shadow: 0px 1px 0px 0px rgba(58, 100, 176, .5);
     }
 
     h4:before {
@@ -349,6 +365,7 @@ article {
         padding-left: 0.2em;
         border-style: none none dotted none;
         border-width: 0 0 1px 1em;
+        box-shadow: 0px 1px 0px 0px rgba(58, 100, 176, .5);
     }
 
     h5:before {
@@ -375,6 +392,7 @@ article {
         width: 90% !important;
         margin-left: 5%;
         background-color: @accent-bg;
+        box-shadow: 1px 1px 0px 0px rgba(58, 100, 176, .5);
 
         cite {
             display: block;
@@ -392,6 +410,7 @@ article {
         &:extend(.table-striped all);
         &:extend(.table-hover all);
         width: auto;
+        box-shadow: 1px 1px 0px 0px rgba(58, 100, 176, .5);
     }
 
     em {
@@ -400,12 +419,12 @@ article {
 
     strong {
         font-size: xx-large;
-        color: white;
-        text-shadow: black -5px -5px 5px, black 5px 5px 5px, black -5px 5px 5px, black 5px -5px 5px;
+        text-shadow: -1px -1px 0px white;
     }
 
     .hatena-asin-detail {
         background-color: @accent-bg;
+        box-shadow: 1px 1px 0px 0px rgba(58, 100, 176, .5);
     }
 }
 
