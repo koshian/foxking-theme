@@ -310,7 +310,7 @@ article {
 
         font-family: "Noto Sans", sans-serif;
         font-weight: 900;
-}
+    }
 }
 
 .entry-content {
@@ -457,6 +457,67 @@ article {
     .hatena-asin-detail {
         background-color: @accent-bg;
         box-shadow: 1px 1px 0px 0px rgba(58, 100, 176, .5);
+    }
+}
+
+/* archive style */
+#main {
+    .archive-heading {
+        color: @heading-color;
+        text-align: center;
+        color: @entry-title-color;
+        a {
+            color: @entry-title-color;
+        }
+        text-shadow: rgba(58, 100, 176, .5) 0 1px 1px;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        padding: 1em;
+
+        border-style: solid;
+        border-width: 1px 0px 1px 0px;
+        border-color: @entry-title-color;
+        box-shadow: 0 1px 0px 0px rgba(58, 100, 176, .5),
+                    0 1px 0px 0px rgba(58, 100, 176, .5) inset;
+
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 900;
+    }
+
+    .archive-entries {
+        .archive-entry {
+            margin-bottom: 1em;
+        }
+
+        .date {
+            text-align: right;
+        }
+
+        .entry-title:before {
+            color: @heading-color;
+            font-family: @icon-font-css-name;
+            content:"\e184";
+        }
+
+        .entry-title {
+            font-size: x-large;
+            margin-top: 0;
+            border-style: none none double none;
+            box-shadow: 0px 1px 0px 0px rgba(58, 100, 176, .5);
+        }
+
+
+        .archive-entry-body {
+            .entry-description {
+                max-width: 40em;
+                margin: auto;
+            }
+
+            .social-buttons {
+            }
+        }
     }
 }
 
