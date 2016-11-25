@@ -14,8 +14,8 @@
 
 @font-face {
     font-family: "衡山毛筆";
-    src: url('https://www.googledrive.com/host/0Bxp6_1slWwEfNlhPY1N5MmpPZGM/KouzanMouhituFont.sub.org.foxking.woff2') format('woff2');
-    src: url('https://www.googledrive.com/host/0Bxp6_1slWwEfNlhPY1N5MmpPZGM/KouzanMouhituFont.sub.org.foxking.woff') format('woff');
+    src: url('https://dl.dropboxusercontent.com/u/1384683/KouzanMouhituFont.sub.org.foxking.woff2') format('woff2');
+    src: url('https://dl.dropboxusercontent.com/u/1384683/KouzanMouhituFont.sub.org.foxking.woff') format('woff');
 }
 
 @import "bootstrap-3.3.6/less/bootstrap.less";
@@ -215,6 +215,13 @@ nav {
         li,
         .urllist-item {
             &:extend(.list-group-item all);
+        }
+    }
+
+    #recent_bookmarks .list-group-item > blockquote {
+        p {
+            display: none;
+            font-size: xx-small;
         }
     }
 }
@@ -455,6 +462,12 @@ article {
     .hatena-asin-detail {
         background-color: @accent-bg;
         box-shadow: 1px 1px 0px 0px rgba(58, 100, 176, .5);
+    }
+
+    iframe {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 }
 
