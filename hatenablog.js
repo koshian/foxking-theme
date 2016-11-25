@@ -2,7 +2,8 @@ window.addEventListener("load", function(){
     /* from hatenablog.js (official) */
     function detectDate() {
         // archiveのとき, 一番上の日付から年を読む
-        if (Hatena.Diary.data('page') === 'archive') {
+        var page = window.location.pathname.split('/')[1];
+        if (page === 'archive') {
             var $entry = $('section.archive-entry:first');
             if ($entry.length > 0) {
                 var year_month_day = $entry.find('div.date > a > time').attr('datetime');
@@ -68,7 +69,7 @@ window.addEventListener("load", function(){
         });
     }
     /* end hatenablog.js ( official ) */
-    
+
     $('.hatena-urllist li').each(function() {
         var r = $(this).html().replace(/(\()(\d+)(\))(.*)/g,
                                        "<span class=\"badge\">$2</span></li>");
