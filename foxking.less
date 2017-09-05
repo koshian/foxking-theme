@@ -157,7 +157,8 @@ nav {
 }
 
 #main {
-    .make-md-column(8);
+    .make-md-column-push(3);
+    .make-md-column(6);
 
     .pager {
         width: 100%;
@@ -176,8 +177,13 @@ nav {
     }
 }
 
+#box1 {
+    .make-md-column-pull(9);
+    .make-md-column(3);
+}
+
 #box2 {
-    .make-md-column(4);
+    .make-md-column(3);
 
     .hatena-module-title {
         color: @heading-color;

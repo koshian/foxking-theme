@@ -1,4 +1,4 @@
-TARGET=~/Dropbox/Public
+TARGET=public
 
 all: foxking.min.css hatenablog.min.js
 
